@@ -4,7 +4,7 @@ import Auth from './pages/Auth'
 
 function App() {
   return (
-    <div className="w-5/6 h-full mx-auto">
+    <div className="h-full w-full">
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/auth' element={<Auth/>}/>
