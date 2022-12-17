@@ -4,9 +4,11 @@ import Filter from './Filter'
 import Navigater from './Navigater'
 import ProductList from './ProductList'
 import ListTop from './ListTop'
+import Footer from '../../components/Footer'
 
 const index = () => {
   return (
+    <>
     <div className='w-10/12 mx-auto'>
         <Header/>
         <Navigater/>
@@ -18,6 +20,8 @@ const index = () => {
           </div>
         </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

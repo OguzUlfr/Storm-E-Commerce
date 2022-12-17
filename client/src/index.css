@@ -55,3 +55,9 @@ html, body, #root{
   background-color: #FD5E53;
   border-radius: 10px;
 }
+
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

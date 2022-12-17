@@ -4,7 +4,7 @@ import {BsBagPlusFill} from 'react-icons/bs'
 
 const index = () => {
   return (
-    <div className='border-2 w-[240px] h-[340px] rounded-md overflow-hidden hover:scale-105 transition-all'>
+    <div className='border-2 w-[240px] h-[340px] rounded-md overflow-hidden'>
         <Link className='w-full h-full'>
               <div className='w-full h-40 bg-cover bg-center bg-no-repeat' style={{backgroundImage: "url('https://sneakernews.com/wp-content/uploads/2022/09/nike-air-force-1-low-black-white-dv0788-001-8.jpg')"}}></div>
               <div className='w-full p-3 px-4 flex flex-wrap items-center'>
