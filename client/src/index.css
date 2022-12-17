@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .w-spacing {
+    word-spacing: 10px;
+  }
+}
+
 
 *{
   margin: 0;
@@ -37,4 +43,15 @@ html, body, #root{
 .swiper-pagination{
   top: 540px;
   position: absolute !important;
+}
+
+.new-scroll::-webkit-scrollbar{
+  width: 3px;
+  background-color: rgb(179, 179, 179);
+  border-radius: 10px;
+}
+.new-scroll::-webkit-scrollbar-thumb{
+  width: 3px;
+  background-color: #FD5E53;
+  border-radius: 10px;
 }

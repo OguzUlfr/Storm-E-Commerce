@@ -1,27 +1,31 @@
 import React from 'react'
 import Header from '../../components/Header'
+import Component from './Component';
 import HomeSlider from '../../components/Slider-H'
-import CardList from '../../components/Card-List'
-import DoubleAd from '../../components/Double-Ad'
-import SingleAD from '../../components/Single-Ad'
-import ThippleAd from '../../components/Thripple-Ad'
-import Partners from '../../components/Partners'
 import Footer from '../../components/Footer/index'
 
 function index() {
+  const HomeList = [
+    "CardList",
+    "DoubleAd",
+    "SingleAD",
+    "ThippleAD",
+    "CardList",
+    "CardList",
+    "SingleAD",
+    "Partners"
+  ];
+  console.log(HomeList);
   return (
     <>
       <div className='w-5/6 mx-auto'>
         <Header/>
         <HomeSlider/>
-        <CardList title={'SON GEZDİKLERİM'}/>
-        <DoubleAd/>
-        <SingleAD/>
-        <ThippleAd/>
-        <CardList title={'ÇOK SATANLAR'}/>
-        <CardList title={'İNDİRİME DOYANLAR'}/>
-        <SingleAD/>
-        <Partners/>
+        {HomeList &&
+          HomeList.map(item => {
+            return <Component type={item}/>
+          })
+        }
       </div>
       <Footer/>
     </>

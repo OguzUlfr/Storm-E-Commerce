@@ -6,11 +6,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 
-function index({title,data}) {
+function index() {
   return (
     <div className='my-8'>
         <div className='p-2 w-full flex justify-between'>
-            <span className='font-bold text-lg'>{title}</span>
+            <span className='font-bold text-lg'>Test</span>
             <span className='font-semibold opacity-60 hover:opacity-80 cursor-pointer flex items-center gap-3'>Tümü<IoMdArrowDropright size={24}/></span>
         </div>
         <div className=' py-10 px-2 select-none'>
