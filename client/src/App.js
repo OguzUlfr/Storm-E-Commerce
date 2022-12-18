@@ -1,6 +1,6 @@
 import { Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
-import Auth from './pages/Auth'
+import Auth from './pages/Auth/Login'
 import List from './pages/List'
 import Basket from './pages/Basket'
 
